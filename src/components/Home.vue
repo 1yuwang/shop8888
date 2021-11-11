@@ -73,7 +73,6 @@
       },
       getMenuList() {
         this.$http.get('menus').then(res => {
-          console.log(res)
           if(res.data.meta.status !== 200) this.$message.error('请求导航栏失败')
           this.menuList = res.data.data
         })

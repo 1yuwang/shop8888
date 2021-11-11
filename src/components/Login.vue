@@ -51,7 +51,6 @@
         this.$refs.form.validate(valid => {
           if(!valid) return
           this.$http.post('login', this.loginForm).then(res => {
-            console.log(res)
             if(res.data.meta.status !== 200) this.$message.error(res.data.meta.msg)
             this.$message.success('登录成功')
             // 保存当前的token
