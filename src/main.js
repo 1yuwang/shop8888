@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-// import { ElIcon } from 'element-plus'
 import './assets/fonts/iconfont.css'
 import axios from 'axios'
 
@@ -19,7 +18,5 @@ axios.interceptors.request.use(config => {
 
 app.use(router)
 app.use(ElementPlus)
-// app.use(ElIcon)
-
 app.mount('#app')
 

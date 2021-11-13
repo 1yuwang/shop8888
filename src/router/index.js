@@ -6,6 +6,11 @@ const Users = () => import('../components/user/Users.vue')
 const Welcome = () => import('../components/Welcome.vue')
 const Roles = () => import('../components/power/Roles.vue')
 const Rights = () => import('../components/power/Rights.vue')
+const Categories = () => import('../components/goods/Categories.vue')
+const Params = () => import('../components/goods/Params.vue')
+const Goods = () => import('../components/goods/Goods.vue')
+const AddGoods = () => import('../components/goods/AddGoods.vue')
+const Reports = () => import('../components/reports/Reports.vue')
 
 const routes = [
   {
@@ -38,6 +43,31 @@ const routes = [
         path: '/rights',
         name: 'Rights',
         component: Rights
+      },
+      {
+        path: '/categories',
+        name: 'Categories',
+        component: Categories
+      },
+      {
+        path: '/params',
+        name: 'Params',
+        component: Params
+      },
+      {
+        path: '/goods',
+        name: 'Goods',
+        component: Goods
+      },
+      {
+        path: '/goods/add',
+        name: 'AddGoods',
+        component: AddGoods
+      },
+      {
+        path: '/reports',
+        name: 'Reports',
+        component: Reports
       }
     ]
   }
